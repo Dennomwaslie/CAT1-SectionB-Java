@@ -1,0 +1,34 @@
+class StudentRecord {
+
+    // Private fields (Encapsulation)
+    private String studentID;
+    private String name;
+    private String course;
+
+    // Constructor
+    public StudentRecord(String studentID, String name, String course) {
+        this.studentID = studentID;
+        this.name = name;
+        this.course = course;
+    }
+
+    // Getters
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    // Method to display student details
+    public void displayInfo() {
+        System.out.println("Student ID: " + studentID);
+        System.out.println("Name: " + name);
+        System.out.println("Course: " + course);
+    }
+}
