@@ -1,0 +1,28 @@
+class Car extends Vehicle {
+
+    // Additional field
+    private String fuelType;
+
+    // Constructor
+    public Car(String brand, String model, int year, String fuelType) {
+        super(brand, model, year);   // Call parent constructor
+        this.fuelType = fuelType;
+    }
+
+    // Getter
+    public String getFuelType() {
+        return fuelType;
+    }
+
+    // Setter
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    // Overridden method
+    @Override
+    public void displayDetails() {
+        super.displayDetails();   // Display parent details
+        System.out.println("Fuel Type: " + fuelType);
+    }
+}
